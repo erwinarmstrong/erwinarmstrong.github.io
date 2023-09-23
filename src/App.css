@@ -7,13 +7,12 @@
 
 .App-header {
   min-height: 80vh;
-  /* 80% of viewport height */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 div {
@@ -31,14 +30,12 @@ div {
 
 .LandingPage {
   height: 80vh;
-  /* Set to 75% of viewport height */
   text-align: center;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* Center the content horizontally */
 }
 
 .LandingPageTitle {
@@ -56,6 +53,7 @@ div {
   background-color: transparent;
   border: none;
   color: #ffF;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .BackgroundImage {
@@ -72,9 +70,9 @@ div {
 .ButtonText {
   position: relative;
   z-index: 1;
-  color: #FFF;
+  color: #000;
+  text-shadow: -2px -2px 0 #FFF, 2px -2px 0 #FFF, -2px 2px 0 #FFF, 2px 2px 0 #FFF;
 }
-
 
 @keyframes spinImage {
   from {
@@ -85,7 +83,6 @@ div {
     transform: rotate(360deg);
   }
 }
-
 
 .TopBar {
   top: 0;
@@ -100,27 +97,29 @@ div {
   position: fixed;
   left: 0;
   width: 100%;
-  /* Adjust as needed */
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 10vh;
-}
-
-.BottomBarButtons,
-.TopBarButtons {
-  width: 10vmin;
-  /* This will make the buttons square and scale with the viewport */
   height: 10vmin;
-  /* Same as width for a square button */
-  background-color: #fff;
-  /* Adjust as needed */
-  color: #000;
-  /* Adjust as needed */
-  border: none;
 }
 
-/* Styles for swipe containers */
+.BottomarButtons,
+.TopbarButtons {
+  width: 100%;
+  height: 10vmin;
+  color: #000;
+  border: none;
+
+}
+
+.BottomBarButton,
+.TopbarButton {
+  width: 10vmin;
+  height: 10vmin;
+}
+
+
+
 .swipe-container {
   width: 100%;
   height: 70vh;
@@ -135,8 +134,6 @@ div {
   height: 100%;
 }
 
-
-/* Modal styles */
 .modal {
   display: block;
   position: fixed;
@@ -155,7 +152,6 @@ div {
 
 .modal-content {
   background-color: #4a4d56;
-  /* Original background color */
   margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
@@ -180,6 +176,8 @@ div {
   width: 100vw;
 }
 
+
+
 .InputTable {
   width: 100%;
   table-layout: fixed;
@@ -193,20 +191,14 @@ div {
   box-sizing: border-box;
 }
 
-
 .GoBacktoHomeDiv {
   text-align: end;
 }
 
 .GoBacktoHomeButton {
   width: 10vmin;
-  /* This will make the buttons square and scale with the viewport */
   height: 10vmin;
-  /* Same as width for a square button */
   background-color: #fff;
-  /* Adjust as needed */
   color: #000;
-  /* Adjust as needed */
   border: none;
-
 }

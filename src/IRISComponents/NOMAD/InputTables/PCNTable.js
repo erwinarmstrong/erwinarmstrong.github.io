@@ -1,12 +1,12 @@
 //PCNTable.js
 import React, { useState } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import PCNNumberOptionMap1 from '../ChoiceOptions/PCNNumberOptionMap1'
-import PCNNumberOptionMap2 from '../ChoiceOptions/PCNNumberOptionMap2'
-import PCNPavementOptionMap from '../ChoiceOptions/PCNPavementOptionMap'
-import PCNSubgradeStengthOptionMap from '../ChoiceOptions/PCNSubgradeStengthOptionMap'
-import PCNTirePressureOptionMap from '../ChoiceOptions/PCNTirePressureOptionMap'
-import PCNMethodOptionMap from '../ChoiceOptions/PCNMethodOptionMap'
+import PCNNumberOptionMap1 from '../ChoiceOptions/NOMADPCNNumberOptionMap1'
+import PCNNumberOptionMap2 from '../ChoiceOptions/NOMADPCNNumberOptionMap2'
+import PCNPavementOptionMap from '../ChoiceOptions/NOMADPCNPavementOptionMap'
+import PCNSubgradeStengthOptionMap from '../ChoiceOptions/NOMADPCNSubgradeStengthOptionMap'
+import PCNTirePressureOptionMap from '../ChoiceOptions/NOMADPCNTirePressureOptionMap'
+import PCNMethodOptionMap from '../ChoiceOptions/NOMADPCNMethodOptionMap'
 
 
 

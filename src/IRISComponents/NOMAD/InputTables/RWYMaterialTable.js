@@ -1,7 +1,7 @@
 //RWYMaterialsTable.js
 import React, { useState } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import RWYMaterialOptionsMap from '../ChoiceOptions/RWYMaterialOptionsMap'
+import RWYMaterialOptionsMap from '../ChoiceOptions/NOMADRWYMaterialOptionsMap'
 
 
 function RWYMaterialTable({

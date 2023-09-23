@@ -1,7 +1,7 @@
 //MedLevelAvail.js
 import React, { useState } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import MedLevelAvailOptionMap from '../ChoiceOptions/MedLevelAvailOptionMap'
+import MedLevelAvailOptionMap from '../ChoiceOptions/NOMADMedLevelAvailOptionMap'
 
 
 function MedLevelAvail({

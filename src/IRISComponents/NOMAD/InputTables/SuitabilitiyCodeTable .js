@@ -1,7 +1,7 @@
 //SuitabilityCode.js
 import React, { useState, useEffect } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import SuitabilityCodeOptionMap from '../ChoiceOptions/SuitabilityCodeOptionMap'
+import SuitabilityCodeOptionMap from '../ChoiceOptions/NOMADSuitabilityCodeOptionMap'
 
 
 function SuitabilityCode({

@@ -1,7 +1,7 @@
 //CeilingType.js
 import React, { useState } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import CeilingTypeOptionMap from '../ChoiceOptions/CeilingTypeOptionMap'
+import CeilingTypeOptionMap from '../ChoiceOptions/NOMADCeilingTypeOptionMap'
 
 
 function CeilingType({

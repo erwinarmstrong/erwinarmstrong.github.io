@@ -188,11 +188,13 @@ function Topbar({
                 </table>
                 <br />
             </div>
-            <div className="NOMADNavButtons">
-                <button className="NOMADButton" onClick={downloadTopbarContent}>Export Topbar Content</button>
-                <button className="NOMADButton" onClick={copyToClipboard}>{copyStatus}</button>
+            <div >
+                <div className='NOMADTopbarButtons'>
+                    <button className="NOMADTopbarButton" onClick={downloadTopbarContent}>Export Topbar Content</button>
+                    <button className="NOMADTopbarButton" onClick={copyToClipboard}>{copyStatus}</button>
+                </div>
             </div>
-        </div>
+        </div >
     );
 }
 

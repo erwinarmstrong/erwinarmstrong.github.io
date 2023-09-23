@@ -1,7 +1,7 @@
 //RWYWidth.js
 import React, { useState, useEffect } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import RWYWidthOptionMap from '../ChoiceOptions/RWYWidthOptionMap'
+import RWYWidthOptionMap from '../ChoiceOptions/NOMADRWYWidthOptionMap'
 
 
 function RWYWidth({

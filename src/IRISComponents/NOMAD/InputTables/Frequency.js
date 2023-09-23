@@ -1,7 +1,7 @@
 //FrequencyTable.js
 import React, { useState } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import DefaultOptionMap from '../ChoiceOptions/DefaultOptionMap'
+import DefaultOptionMap from '../ChoiceOptions/NOMADDefaultOptionMap'
 
 
 function FrequencyTable({

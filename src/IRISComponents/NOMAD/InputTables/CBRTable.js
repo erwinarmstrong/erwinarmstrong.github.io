@@ -1,8 +1,8 @@
 //CBRTable.js
 import React, { useState } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import CBROptionMap from '../ChoiceOptions/CBROptionMap'
-import CBRLayerOptionMap from '../ChoiceOptions/CBRLayerOptionMap'
+import CBROptionMap from '../ChoiceOptions/NOMADCBROptionMap'
+import CBRLayerOptionMap from '../ChoiceOptions/NOMADCBRLayerOptionMap'
 
 
 

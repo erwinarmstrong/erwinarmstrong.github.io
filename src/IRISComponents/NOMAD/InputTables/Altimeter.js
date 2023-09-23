@@ -1,7 +1,7 @@
 //AltimeterTable.js
 import React, { useState } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import AltimeterOptionMap from '../ChoiceOptions/AltimeterOptionMap'
+import AltimeterOptionMap from '../ChoiceOptions/NOMADAltimeterOptionMap'
 
 
 function AltimeterTable({

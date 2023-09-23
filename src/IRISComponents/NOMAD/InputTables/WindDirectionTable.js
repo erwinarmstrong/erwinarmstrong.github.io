@@ -1,7 +1,7 @@
 //WindDirectionTable.js
 import React, { useState, useEffect } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import WindDirectionOptionMap from '../ChoiceOptions/WindDirectionOptionMap'
+import WindDirectionOptionMap from '../ChoiceOptions/NOMADWindDirectionOptionMap'
 
 
 

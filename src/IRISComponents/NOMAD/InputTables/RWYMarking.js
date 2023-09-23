@@ -1,7 +1,7 @@
 //RWYMarking.js
 import React, { useState, useEffect } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import RWYMarkingOptionMap from '../ChoiceOptions/RWYMarkingOptionMap'
+import RWYMarkingOptionMap from '../ChoiceOptions/NOMADRWYMarkingOptionMap'
 
 
 function RWYMarking({

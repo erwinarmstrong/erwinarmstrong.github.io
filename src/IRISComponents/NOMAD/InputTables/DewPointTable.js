@@ -1,7 +1,7 @@
 //DewPointTable.js
 import React, { useState } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import DewPointOptionMap from '../ChoiceOptions/DewPointOptionMap'
+import DewPointOptionMap from '../ChoiceOptions/NOMADDewPointOptionMap'
 
 
 function DewPointTable({

@@ -1,7 +1,7 @@
 //ARFFCategoryTable.js
 import React, { useState } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import ARFFCategoryOptionMap from '../ChoiceOptions/ARFFCategoryOptionMap'
+import ARFFCategoryOptionMap from '../ChoiceOptions/NOMADARFFCategoryOptionMap'
 
 
 function ARFFCategoryTable({

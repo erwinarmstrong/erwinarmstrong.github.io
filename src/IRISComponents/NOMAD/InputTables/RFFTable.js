@@ -1,7 +1,7 @@
 //RFFTable.js
 import React, { useState, useEffect } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import RFFOptionMap from '../ChoiceOptions/RFFOptionMap'
+import RFFOptionMap from '../ChoiceOptions/NOMADRFFOptionMap'
 
 
 function RFFTable({

@@ -1,7 +1,7 @@
 //GustVelocity.js
 import React, { useState } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import GustVelocityOptionMap from '../ChoiceOptions/GustVelocityOptionMap'
+import GustVelocityOptionMap from '../ChoiceOptions/NOMADGustVelocityOptionMap'
 
 
 function GustVelocity({

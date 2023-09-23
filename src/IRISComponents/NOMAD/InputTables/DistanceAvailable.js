@@ -1,8 +1,8 @@
 //DistanceAvailable.js
 import React, { useState } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import DistanceAvailableOptionMap from '../ChoiceOptions/DistanceAvailableOptionMap'
-import DistanceAvailableOptionMap2 from '../ChoiceOptions/DistanceAvailableOptionMap2'
+import DistanceAvailableOptionMap from '../ChoiceOptions/NOMADDistanceAvailableOptionMap'
+import DistanceAvailableOptionMap2 from '../ChoiceOptions/NOMADDistanceAvailableOptionMap2'
 
 
 function DistanceAvailable({

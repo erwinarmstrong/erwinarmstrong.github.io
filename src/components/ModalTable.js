@@ -1,14 +1,9 @@
 import React from 'react';
-import CBRComponent from '../IRISComponents/NOMAD/InputTables/CBRComponent'
-import PCNComponent from '../IRISComponents/NOMAD/InputTables/PCNComponent'
-import UnknownComponent from '../IRISComponents/NOMAD/InputTables/UnknownComponent'
+import CBRComponent from '../IRISComponents/NOMAD/InputTables/CBRComponent';
+import PCNComponent from '../IRISComponents/NOMAD/InputTables/PCNComponent';
+import UnknownComponent from '../IRISComponents/NOMAD/InputTables/UnknownComponent';
 
-const ModalTable = ({
-    sendToModal,
-}) => {
-
-
-
+const ModalTable = ({ sendToModal }) => {
     return (
         <table>
             <tbody>

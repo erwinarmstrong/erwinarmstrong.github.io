@@ -1,7 +1,7 @@
 import React from 'react';
-import AltimeterOptionMap from '../ChoiceOptions/AltimeterOptionMap';
-import DefaultOptionsMap from '../ChoiceOptions/DefaultOptionMap'
-import RWYInUseOptionMap from '../ChoiceOptions/RWYInUseOptionMap';
+import AltimeterOptionMap from '../ChoiceOptions/NOMADAltimeterOptionMap';
+import DefaultOptionsMap from '../ChoiceOptions/NOMADDefaultOptionMap'
+import RWYInUseOptionMap from '../ChoiceOptions/NOMADRWYInUseOptionMap';
 
 
 function ImportSummaryScreen({

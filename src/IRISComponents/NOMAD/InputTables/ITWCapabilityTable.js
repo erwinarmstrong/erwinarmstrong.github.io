@@ -1,7 +1,7 @@
 //ITWCapability.js
 import React, { useState } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import ITWCapabilityOptionMap from '../ChoiceOptions/ITWCapabilityOptionMap'
+import ITWCapabilityOptionMap from '../ChoiceOptions/NOMADITWCapabilityOptionMap'
 
 
 function ITWCapability({

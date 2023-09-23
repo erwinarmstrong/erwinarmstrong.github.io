@@ -1,7 +1,7 @@
 //VisibilityDistance.js
 import React, { useState, useEffect } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import VisibilityDistanceOptionMap from '../ChoiceOptions/VisibilityDistanceOptionMap'
+import VisibilityDistanceOptionMap from '../ChoiceOptions/NOMADVisibilityDistanceOptionMap'
 
 
 function VisibilityDistance({

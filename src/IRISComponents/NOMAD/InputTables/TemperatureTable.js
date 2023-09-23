@@ -1,7 +1,7 @@
 //TemperatureTable.js
 import React, { useState, useEffect } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import TemperatureOptionMap from '../ChoiceOptions/TemperatureOptionMap'
+import TemperatureOptionMap from '../ChoiceOptions/NOMADTemperatureOptionMap'
 
 
 function TemperatureTable({

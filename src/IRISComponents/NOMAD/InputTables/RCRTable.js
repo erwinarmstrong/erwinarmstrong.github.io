@@ -1,7 +1,7 @@
 //RCRTable.js
 import React, { useState } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import RCROptionMap from '../ChoiceOptions/RCROptionMap'
+import RCROptionMap from '../ChoiceOptions/NOMADRCROptionMap'
 
 
 function RCRTable({

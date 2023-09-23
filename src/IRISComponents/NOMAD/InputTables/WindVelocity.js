@@ -1,7 +1,7 @@
 //WindVelocity.js
 import React, { useState, useEffect } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import WindVelocityOptionMap from '../ChoiceOptions/WindVelocityOptionMap'
+import WindVelocityOptionMap from '../ChoiceOptions/NOMADWindVelocityOptionMap'
 
 
 function WindVelocity({

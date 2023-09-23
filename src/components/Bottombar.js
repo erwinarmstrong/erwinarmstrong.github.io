@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import ModalTable from './ModalTable';
 
 function BottomBar({ onNavigateBack }) {
-
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [fileContent, setFileContent] = useState('');
-  const [sendToModal, setSendtoModal] = useState('')
+  const [sendToModal, setSendToModal] = useState(''); // Corrected typo in variable name
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -17,10 +16,7 @@ function BottomBar({ onNavigateBack }) {
 
   const pasteAndGo = () => {
     navigator.clipboard.readText().then(text => {
-      // Set the content of the modal to the clipboard text
       setFileContent(text);
-
-      // Open the modal
       openModal(true);
     }).catch(error => {
       console.error('Error reading from clipboard:', error);
@@ -29,8 +25,8 @@ function BottomBar({ onNavigateBack }) {
 
   return (
     <div className="BottomBar">
-      <div>
-        <button className='BottomBarButtons' onClick={pasteAndGo}>
+      <div className="BottomBarButtons">
+        <button className="BottomBarButton" onClick={pasteAndGo}>
           Paste and Go
         </button>
       </div>
@@ -44,8 +40,7 @@ function BottomBar({ onNavigateBack }) {
             />
           </div>
         </div>
-      )
-      }
+      )}
     </div>
   );
 }

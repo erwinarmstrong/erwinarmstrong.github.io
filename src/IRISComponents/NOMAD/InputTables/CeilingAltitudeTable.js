@@ -1,7 +1,7 @@
 //CeilingAltitude.js
 import React, { useState } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import CeilingAltitudeOptionMap from '../ChoiceOptions/CeilingAltitudeOptionMap'
+import CeilingAltitudeOptionMap from '../ChoiceOptions/NOMADCeilingAltitudeOptionMap'
 
 
 function CeilingAltitudeTable({

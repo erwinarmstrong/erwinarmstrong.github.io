@@ -23,7 +23,6 @@ const AppRouter = () => {
           }
         />
         <Route path="/nomad" element={<NOMAD />} />
-        <Route path='/' element={<App />} />
       </Routes>
     </Router>
   );

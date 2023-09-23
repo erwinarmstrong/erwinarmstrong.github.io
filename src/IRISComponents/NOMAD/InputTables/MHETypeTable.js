@@ -1,8 +1,8 @@
 //MHEType.js
 import React, { useState } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import MHETypeOptionMap from '../ChoiceOptions/MHETypeOptionMap'
-import MHENumberOptionMap from '../ChoiceOptions/MHENumberOptionMap'
+import MHETypeOptionMap from '../ChoiceOptions/NOMADMHETypeOptionMap'
+import MHENumberOptionMap from '../ChoiceOptions/NOMADMHENumberOptionMap'
 
 
 function MHEType({

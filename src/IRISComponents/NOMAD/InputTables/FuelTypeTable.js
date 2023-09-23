@@ -1,8 +1,8 @@
 //FuelType.js
 import React, { useState } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import FuelTypeOptionMap from '../ChoiceOptions/FuelTypeOptionMap'
-import FuelQtyOptionMap from '../ChoiceOptions/FuelQtyOptionMap'
+import FuelTypeOptionMap from '../ChoiceOptions/NOMADFuelTypeOptionMap'
+import FuelQtyOptionMap from '../ChoiceOptions/NOMADFuelQtyOptionMap'
 
 
 function FuelType({

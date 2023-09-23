@@ -1,7 +1,7 @@
 //WorkingMOG.js
 import React, { useState, useEffect } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import OnGroundOptionMap from '../ChoiceOptions/OnGroundOptionMap'
+import OnGroundOptionMap from '../ChoiceOptions/NOMADOnGroundOptionMap'
 
 
 function WorkingMOGTable({

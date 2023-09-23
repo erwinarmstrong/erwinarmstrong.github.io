@@ -1,7 +1,7 @@
 //LocationsTable.js
 import React, { useState, useEffect } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import DefaultOptionsMap from '../ChoiceOptions/DefaultOptionMap'
+import DefaultOptionsMap from '../ChoiceOptions/NOMADDefaultOptionMap'
 
 
 function LocationTable({

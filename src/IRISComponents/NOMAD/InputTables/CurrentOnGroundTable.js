@@ -1,7 +1,7 @@
 //CurrentOnGround.js
 import React, { useState } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import OnGroundOptionMap from '../ChoiceOptions/OnGroundOptionMap'
+import OnGroundOptionMap from '../ChoiceOptions/NOMADOnGroundOptionMap'
 
 
 function CurrentOnGround({
