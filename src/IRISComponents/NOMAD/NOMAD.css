@@ -1,0 +1,268 @@
+/* Common Styles for App */
+.App,
+.IRISChoiceSelect,
+.IRISTopbar,
+.IRISBottomBar,
+.IRISScreenTable,
+.IRISTable,
+.IRISAltimeterTable,
+.EndScreenTable,
+body,
+.IRISLabel,
+.IRISInformationLabel,
+.IRISButton,
+.IRISCBRPCNButton,
+.selected,
+.EndScreen,
+.modal,
+.modal-content,
+.close,
+.NOMADTopbarButtons,
+.NOMADTopbarButton {
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+/* Base Styles for App */
+.App {
+    text-align: center;
+    font-size: 1rem;
+    /* Use relative units for better scalability */
+}
+
+/* Portrait Orientation Styles */
+@media (orientation: portrait) {
+    .App {
+        font-size: 0.7rem;
+        /* Adjust font size for portrait mode */
+    }
+
+    .IRISChoiceSelect {
+        font-size: 0.5rem;
+    }
+
+    label {
+        font-size: 0.7rem;
+    }
+
+    .IRISNavButtons {
+        flex-direction: row;
+        /* Display buttons side by side */
+        align-items: center;
+        /* Center items vertically */
+    }
+
+    .IRISButton,
+    .IRISCBRPCNButton {
+        margin-top: 0;
+        /* Remove top margin */
+        margin-left: 0.5em;
+        /* Add a small gap between buttons */
+        font-size: 0.2em;
+    }
+}
+
+/* Landscape Orientation Styles */
+@media (orientation: landscape) {
+    .App {
+        font-size: 1rem;
+        /* Adjust font size for landscape mode */
+    }
+
+    .IRISChoiceSelect {
+        font-size: 0.8rem;
+    }
+
+    .IRISNavButtons {
+        font-size: 0.5rem;
+    }
+
+    label {
+        font-size: 1.5rem;
+    }
+}
+
+/* Landscape Orientation Styles for Small Phones */
+@media (orientation: landscape) and (max-width: 767px) {
+    .App {
+        font-size: 0.8rem;
+    }
+
+    .IRISChoiceSelect {
+        font-size: 0.5rem;
+    }
+
+    label {
+        font-size: 0.5rem;
+    }
+
+    .IRISCBRPCNButton {
+        font-size: 0.5rem;
+    }
+
+    table {
+        border-spacing: 0;
+    }
+
+    .IRISNavButtons {
+        font-size: 0.4rem;
+    }
+}
+
+/* Common Styles for Headers and Top Bars */
+.App-header,
+.IRISTopbar,
+.IRISBottomBar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.IRISTopbar,
+.IRISBottomBar {
+    color: white;
+    background-color: #282c34;
+    /* Original background color */
+}
+
+/* Styles for Tables */
+.IRISScreenTable,
+.IRISTable,
+.IRISAltimeterTable,
+.EndScreenTable {
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* Styles for Choice Selects */
+.IRISChoiceSelect {
+    width: 90%;
+    height: 3em;
+    text-align: center;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+/* Styles for Swipe Containers */
+.swipe-container {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.react-swipeable-view-container {
+    width: 100%;
+    height: 100%;
+}
+
+/* Styles for Body and Labels */
+body {
+    background-color: #282c34;
+    /* Original background color */
+    margin: 0;
+    padding: 0;
+    min-height: 95vh;
+    color: white;
+}
+
+.IRISLabel,
+.IRISInformationLabel {
+    font-size: 0.5rem;
+    color: white;
+}
+
+/* Styles for Buttons */
+.IRISButton,
+.IRISCBRPCNButton {
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    justify-content: space-between;
+}
+
+.IRISCBRPCNButton {
+    font-size: 0.9rem;
+}
+
+/* Selected Style */
+.selected {
+    background-color: #282c54;
+    /* Original selected background color */
+    color: white;
+}
+
+/* End Screen Styles */
+.EndScreen {
+    width: 100%;
+    color: white;
+    background-color: #393d45;
+    /* Original background color */
+    text-align: left;
+}
+
+.EndScreenTable {
+    border-width: thin;
+    text-align: left;
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* Modal Styles */
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background-color: #4a4d56;
+    /* Original background color */
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.NOMADTopbarButtons {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+}
+
+.NOMADTopbarButton {
+    width: 10vmin;
+    height: 10vmin;
+    justify-content: space-around;
+    display: flex;
+}

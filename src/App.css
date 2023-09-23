@@ -116,9 +116,8 @@ div {
 .TopbarButton {
   width: 10vmin;
   height: 10vmin;
+  justify-content: space-between;
 }
-
-
 
 .swipe-container {
   width: 100%;
@@ -175,8 +174,6 @@ div {
 .NOMADScreenTable {
   width: 100vw;
 }
-
-
 
 .InputTable {
   width: 100%;

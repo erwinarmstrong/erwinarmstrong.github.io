@@ -11,6 +11,7 @@ import ImportSummaryScreen from './Screens/ImportSummaryScreen'
 import BottomBar from './Screens/BottomBar'
 
 import '../../App.css';
+import './NOMAD.css'
 
 // @ts-ignore
 import SwipeableViews from 'react-swipeable-views';
@@ -98,7 +99,7 @@ function NOMAD() {
                 returnedSelectedFuelType={returnedSelectedFuelType}
                 returnedSelectedFuelQty={returnedSelectedFuelQty}
                 returnedSelectedSuitabilityCode={returnedSelectedSuitabilityCode}
-                
+
             />
             <div className="swipe-container">
                 <SwipeableViews
