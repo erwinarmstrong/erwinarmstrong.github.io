@@ -1,24 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Topbar from './components/Topbar';
+import BottomBar from './components/Bottombar';
+import LandingPage from './components/LandingPage';
+import NOMAD from './IRISComponents/NOMAD/NOMAD';
+import './App.css'
 
 function App() {
+  const [showNomad, setShowNomad] = useState(false);
+
+  const handleNavigate = () => {
+    setShowNomad(true);
+  }
+
+  const handleNavigateBack = () => {
+    setShowNomad(false);
+  }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Topbar onNavigateBack={handleNavigateBack} /> {/* Updated */}
+      {!showNomad ? (
+        <LandingPage onNavigate={handleNavigate} />
+      ) : (
+        <NOMAD />
+      )}
+      <BottomBar onNavigateBack={handleNavigateBack} /> {/* Updated */}
     </div>
   );
 }

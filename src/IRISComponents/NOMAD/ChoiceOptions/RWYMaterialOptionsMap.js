@@ -1,0 +1,36 @@
+const characterMap = [
+    { value: '*', label: ' ' },
+    { value: 'A', label: 'GRAVEL' },
+    { value: 'B', label: 'SAND' },
+    { value: 'C', label: 'SILT' },
+    { value: 'D', label: 'CLAY' },
+    { value: 'E', label: 'GRASS' },
+    { value: 'F', label: 'SILTY GRAVEL' },
+    { value: 'G', label: 'CLAYEY GRAVEL' },
+    { value: 'H', label: 'SILTY SAND' },
+    { value: 'I', label: 'CLAYEY SAND' },
+    { value: 'J', label: 'CRUSHED CORAL (COMPACTED)' },
+    { value: 'K', label: 'CRUSHED CORAL' },
+    { value: 'L', label: 'SHELL' },
+    { value: 'M', label: 'ASPHALT SEAL (SEMI-PREPARED)' },
+    { value: 'N', label: 'CONCRETE SEAL (SEMI-PREPARED)' },
+    { value: 'O', label: 'STABILIZED SOIL' },
+    { value: 'P', label: 'SAND ASPHALT' },
+    { value: 'Q', label: 'MACADAM' },
+    { value: 'R', label: 'ASPHALT' },
+    { value: 'S', label: 'CONCRETE' },
+    { value: 'T', label: 'ASPHALT/CONCRETE (MIXED SURFACE)' },
+    { value: 'U', label: 'RIGID PORTLAN CEMENT CONCRETE (PCC)' },
+    { value: 'V', label: 'GRAVEL, WELL-GRADED' },
+    { value: 'W', label: 'GRAVEL, POORLY GRADED' },
+    { value: 'X', label: 'SAND, WELL-GRADED' },
+    { value: 'Y', label: 'SAND POORLY GRADED' },
+    { value: 'Z', label: 'CLAY CH' },
+    { value: '9', label: 'CLAY CL' },
+    { value: '8', label: 'SILT MH' },
+    { value: '7', label: 'SILT ML' },
+    { value: '6', label: 'AM-2 MAT' }
+    // Add more options as needed
+];
+
+export default characterMap;
