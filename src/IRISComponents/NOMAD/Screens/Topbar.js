@@ -140,63 +140,55 @@ function Topbar({
 
 
     return (
-        <div className='NOMADTopbar'>
-            <div>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td colSpan='2'>
-                                <br />
-                                <span>{returnedSelectedLocations}</span>
-                                <span>{returnedSelectedRWYInUse}</span>
-                                <span>{returnedSelectedDistanceAvailable}</span>
-                                <span>{returnedSelectedRWYWidth}</span>
-                                <span>{returnedSelectedRWYMaterials}</span>
-                                <span>{returnedSelectedCBRPCNTable}</span>
-                                <span>{returnedSelectedCBRPCNOptions}</span>
-                                <span>{returnedSelectedRCR}</span>
-                                <span>{returnedSelectedRFF}</span>
-                                <span>{returnedSelectedWindDirection}</span>
-                                <span>{returnedSelectedWindVelocity}</span>
-                                <span>{returnedSelectedGustVelocity}</span>
-                                <span>{returnedSelectedVisibilityDistance}</span>
-                                <span>{returnedSelectedCeilingType}</span>
-                                <span>{returnedSelectedCeilingAltitude}</span>
-                                <span>{returnedSelectedTemperature}</span>
-                                <span>{returnedSelectedDewPoint}</span>
-                                <span>{returnedSelectedAltimeter}</span>
-                                <span>{returnedSelectedRWYMarking}</span>
-                                <span>{returnedSelectedARFFCategory}</span>
-                                <span>{returnedSelectedCurrentOnGround}</span>
-                                <span>{returnedSelectedParkingMOG}</span>
-                                <span>{returnedSelectedWorkingMOG}</span>
-                                <span>{returnedSelectedMHEType[0]}</span>
-                                <span>{returnedSelectedMHENumber[0]}</span>
-                                <span>{returnedSelectedMHEType[1]}</span>
-                                <span>{returnedSelectedMHENumber[1]}</span>
-                                <span>{returnedSelectedFuelType[0]}</span>
-                                <span>{returnedSelectedFuelQty[0]}</span>
-                                <span>{returnedSelectedFuelType[1]}</span>
-                                <span>{returnedSelectedFuelQty[1]}</span>
-                                <span>{returnedSelectedMedLevelAvail}</span>
-                                <span>{returnedSelectedITWCapability}</span>
-                                <span>{returnedSelectedFrequency}</span>
-                                <span>{returnedSelectedSuitabilityCode}</span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <br />
-            </div>
-            <div className='NOMADTopbarButtons'>
-                <div className='NOMADTopbarButton'>
-                    <button className="" onClick={downloadTopbarContent}>Export Topbar Content</button>
-                </div>
-                <div className='NOMADTopbarButton'>
-                    <button className="" onClick={copyToClipboard}>{copyStatus}</button>
-                </div>
-            </div>
-        </div >
+        <div className='NOMADTopbarButtons'>
+            <button className="NOMADButton" onClick={downloadTopbarContent}>Export Topbar Content</button>
+            <table>
+                <tbody>
+                    <tr>
+                        <td colSpan='2'>
+                            <br />
+                            <span>{returnedSelectedLocations}</span>
+                            <span>{returnedSelectedRWYInUse}</span>
+                            <span>{returnedSelectedDistanceAvailable}</span>
+                            <span>{returnedSelectedRWYWidth}</span>
+                            <span>{returnedSelectedRWYMaterials}</span>
+                            <span>{returnedSelectedCBRPCNTable}</span>
+                            <span>{returnedSelectedCBRPCNOptions}</span>
+                            <span>{returnedSelectedRCR}</span>
+                            <span>{returnedSelectedRFF}</span>
+                            <span>{returnedSelectedWindDirection}</span>
+                            <span>{returnedSelectedWindVelocity}</span>
+                            <span>{returnedSelectedGustVelocity}</span>
+                            <span>{returnedSelectedVisibilityDistance}</span>
+                            <span>{returnedSelectedCeilingType}</span>
+                            <span>{returnedSelectedCeilingAltitude}</span>
+                            <span>{returnedSelectedTemperature}</span>
+                            <span>{returnedSelectedDewPoint}</span>
+                            <span>{returnedSelectedAltimeter}</span>
+                            <span>{returnedSelectedRWYMarking}</span>
+                            <span>{returnedSelectedARFFCategory}</span>
+                            <span>{returnedSelectedCurrentOnGround}</span>
+                            <span>{returnedSelectedParkingMOG}</span>
+                            <span>{returnedSelectedWorkingMOG}</span>
+                            <span>{returnedSelectedMHEType[0]}</span>
+                            <span>{returnedSelectedMHENumber[0]}</span>
+                            <span>{returnedSelectedMHEType[1]}</span>
+                            <span>{returnedSelectedMHENumber[1]}</span>
+                            <span>{returnedSelectedFuelType[0]}</span>
+                            <span>{returnedSelectedFuelQty[0]}</span>
+                            <span>{returnedSelectedFuelType[1]}</span>
+                            <span>{returnedSelectedFuelQty[1]}</span>
+                            <span>{returnedSelectedMedLevelAvail}</span>
+                            <span>{returnedSelectedITWCapability}</span>
+                            <span>{returnedSelectedFrequency}</span>
+                            <span>{returnedSelectedSuitabilityCode}</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button className="NOMADButton" onClick={copyToClipboard}>{copyStatus}</button>
+
+        </div>
     );
 }
 

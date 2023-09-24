@@ -1,144 +1,135 @@
-/* Common Styles for App */
+/* Common Styles */
 .App,
-.IRISChoiceSelect,
-.IRISTopbar,
-.IRISBottomBar,
-.IRISScreenTable,
-.IRISTable,
-.IRISAltimeterTable,
+.NOMADChoiceSelect,
+.NOMADTopbar,
+.NOMADBottomBar,
+.NOMADScreenTable,
+.NOMADTable,
+.NOMADAltimeterTable,
 .EndScreenTable,
 body,
-.IRISLabel,
-.IRISInformationLabel,
-.IRISButton,
-.IRISCBRPCNButton,
+.NOMADLabel,
+.NOMADInformationLabel,
+.NOMADButton,
+.NOMADCBRPCNButton,
 .selected,
 .EndScreen,
 .modal,
 .modal-content,
-.close,
-.NOMADTopbarButtons,
-.NOMADTopbarButton {
+.close {
+    text-align: center;
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
 }
 
 /* Base Styles for App */
 .App {
-    text-align: center;
     font-size: 1rem;
-    /* Use relative units for better scalability */
 }
 
-/* Portrait Orientation Styles */
-@media (orientation: portrait) {
+/* Portrait and Landscape Styles */
+@media (orientation: portrait),
+(orientation: landscape) {
     .App {
-        font-size: 0.7rem;
-        /* Adjust font size for portrait mode */
+        font-size: 1.5vmin;
     }
 
-    .IRISChoiceSelect {
-        font-size: 0.5rem;
+    .NOMADChoiceSelect {
+        font-size: 1.5vmin;
     }
 
     label {
-        font-size: 0.7rem;
+        font-size: 2.5vmin;
     }
 
-    .IRISNavButtons {
+    .NOMADTopbarButtons,
+    .NOMADNavButtons {
         flex-direction: row;
-        /* Display buttons side by side */
         align-items: center;
-        /* Center items vertically */
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.5vmin;
     }
 
-    .IRISButton,
-    .IRISCBRPCNButton {
+    .NOMADButton,
+    .NOMADCBRPCNButton {
         margin-top: 0;
-        /* Remove top margin */
         margin-left: 0.5em;
-        /* Add a small gap between buttons */
-        font-size: 0.2em;
+        font-size: 0.6vmin;
     }
 }
 
-/* Landscape Orientation Styles */
+/* Landscape Styles */
 @media (orientation: landscape) {
     .App {
-        font-size: 1rem;
-        /* Adjust font size for landscape mode */
+        font-size: 2.5vmin;
     }
 
-    .IRISChoiceSelect {
-        font-size: 0.8rem;
-    }
-
-    .IRISNavButtons {
-        font-size: 0.5rem;
+    .NOMADChoiceSelect {
+        font-size: 2vmin;
     }
 
     label {
-        font-size: 1.5rem;
+        font-size: 3vmin;
     }
 }
 
-/* Landscape Orientation Styles for Small Phones */
+/* Landscape Styles for Small Phones */
 @media (orientation: landscape) and (max-width: 767px) {
     .App {
-        font-size: 0.8rem;
+        font-size: 2vmin;
     }
 
-    .IRISChoiceSelect {
-        font-size: 0.5rem;
+    .NOMADChoiceSelect {
+        font-size: 1.5vmin;
     }
 
     label {
-        font-size: 0.5rem;
+        font-size: 1.5vmin;
     }
 
-    .IRISCBRPCNButton {
-        font-size: 0.5rem;
+    .NOMADCBRPCNButton {
+        font-size: 1.5vmin;
     }
 
     table {
         border-spacing: 0;
     }
 
-    .IRISNavButtons {
-        font-size: 0.4rem;
+    .NOMADTopbarButtons,
+    .NOMADNavButtons {
+        font-size: 1.2vmin;
     }
 }
 
 /* Common Styles for Headers and Top Bars */
 .App-header,
-.IRISTopbar,
-.IRISBottomBar {
+.NOMADTopbar,
+.NOMADBottomBar {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.IRISTopbar,
-.IRISBottomBar {
+.NOMADTopbar,
+.NOMADBottomBar {
     color: white;
     background-color: #282c34;
-    /* Original background color */
 }
 
 /* Styles for Tables */
-.IRISScreenTable,
-.IRISTable,
-.IRISAltimeterTable,
+.NOMADScreenTable,
+.NOMADTable,
+.NOMADAltimeterTable,
 .EndScreenTable {
     width: 100%;
     table-layout: fixed;
 }
 
 /* Styles for Choice Selects */
-.IRISChoiceSelect {
+.NOMADChoiceSelect {
     width: 90%;
     height: 3em;
     text-align: center;
@@ -164,37 +155,37 @@ body,
 /* Styles for Body and Labels */
 body {
     background-color: #282c34;
-    /* Original background color */
     margin: 0;
     padding: 0;
     min-height: 95vh;
     color: white;
+    font-size: 2vmin;
 }
 
-.IRISLabel,
-.IRISInformationLabel {
-    font-size: 0.5rem;
+.NOMADLabel,
+.NOMADInformationLabel {
+    font-size: 1.5vmin;
     color: white;
 }
 
 /* Styles for Buttons */
-.IRISButton,
-.IRISCBRPCNButton {
-    font-size: 0.8rem;
+.NOMADButton,
+.NOMADCBRPCNButton {
+    font-size: 2vmin;
     cursor: pointer;
-    padding: 0.5em 1em;
-    margin-top: 1em;
+    margin-top: 2vmin;
     justify-content: space-between;
+    width: 10vmin;
+    height: 10vmin;
 }
 
-.IRISCBRPCNButton {
-    font-size: 0.9rem;
+.NOMADCBRPCNButton {
+    font-size: 2.2vmin;
 }
 
 /* Selected Style */
 .selected {
     background-color: #282c54;
-    /* Original selected background color */
     color: white;
 }
 
@@ -203,7 +194,6 @@ body {
     width: 100%;
     color: white;
     background-color: #393d45;
-    /* Original background color */
     text-align: left;
 }
 
@@ -233,7 +223,6 @@ body {
 
 .modal-content {
     background-color: #4a4d56;
-    /* Original background color */
     margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -252,17 +241,4 @@ body {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-}
-
-.NOMADTopbarButtons {
-    width: 100%;
-    justify-content: space-around;
-    display: flex;
-}
-
-.NOMADTopbarButton {
-    width: 10vmin;
-    height: 10vmin;
-    justify-content: space-around;
-    display: flex;
 }
