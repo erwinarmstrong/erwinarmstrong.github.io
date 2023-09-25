@@ -1,17 +1,15 @@
 //NineLine.tsx
 import React, { useState } from 'react'
 
-import Topbar from './Screens/ScreenTemplate'
-import BottomBar from './Screens/ScreenTemplate'
-import Screen1 from './Screens/ScreenTemplate'
+import Topbar from './Screens/Topbar'
+import BottomBar from './Screens/BottomBar'
+import Screen1 from './Screens/Screen1'
 import Screen2 from './Screens/ScreenTemplate'
 import Screen3 from './Screens/ScreenTemplate'
 import Screen4 from './Screens/ScreenTemplate'
 
 import '../../App.css';
 import './NineLine.css'
-
-
 
 // @ts-ignore
 import SwipeableViews from 'react-swipeable-views';
@@ -32,9 +30,14 @@ function NineLine() {
         }
     };
 
+    const [returnedSelectedLocation, setReturnedSelectedLocation] = useState('');
+    const [returnedSelectedFrequency, setReturnedSelectedFrequency] = useState('')
+
     return (
         <div className="LandingPage">
             <Topbar
+                returnedSelectedLocations={returnedSelectedLocation}
+                returnedSelectedFrequency={returnedSelectedFrequency}
             />
             <div className="swipe-container">
                 <SwipeableViews
@@ -47,6 +50,8 @@ function NineLine() {
                     enableMouseEvents
                 >
                     <Screen1
+                        setReturnedSelectedLocation={setReturnedSelectedLocation}
+                        setReturnedSelectedFrequency={setReturnedSelectedFrequency}
                     />
                     <Screen2
                     />
@@ -59,7 +64,8 @@ function NineLine() {
 
             </div>
             <BottomBar
-
+                handleBack={handleBack}
+                handleNext={handleNext}
             />
         </div>
     );

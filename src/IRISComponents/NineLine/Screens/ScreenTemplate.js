@@ -4,8 +4,8 @@ function ScreenTemplate({
 
 }) {
     return (
-        <div className="NOMADAppDiv">
-            <table className='NOMADScreenTable'>
+        <div className="NineLineAppDiv">
+            <table className='NineLineScreenTable'>
                 <tbody>
                     <tr>
                         <td>
