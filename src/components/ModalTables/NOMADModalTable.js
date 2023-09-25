@@ -193,7 +193,7 @@ const ModalTable = ({
                                 </table>
                             </>
                         )}
-                        {fileContent[13] !== 'C' || fileContent[13] !== 'P' && (
+                        {(fileContent[13] !== 'C' || fileContent[13] !== 'P') && (
                             <>
                                 <table>
                                     <tr>

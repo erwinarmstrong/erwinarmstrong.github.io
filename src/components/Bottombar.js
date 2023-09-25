@@ -4,7 +4,6 @@ import ModalTable from './ModalTable';
 function BottomBar({ onNavigateBack }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [fileContent, setFileContent] = useState('');
-  const [sendToModal, setSendToModal] = useState(''); // Corrected typo in variable name
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -23,6 +22,29 @@ function BottomBar({ onNavigateBack }) {
     });
   };
 
+
+  const handleFileUpload = (event) => {
+    try {
+      const file = event.target.files[0];
+      const reader = new FileReader();
+
+      reader.onload = (e) => {
+        const content = e.target.result;
+        setFileContent(content);
+        openModal(); // Open the modal after content is loaded
+      };
+
+      reader.readAsText(file);
+    } catch (error) {
+      console.error("Error uploading file:", error);
+    }
+  };
+
+  const handleButtonClick = () => {
+    document.getElementById('fileInput').click();
+    openModal();
+  };
+
   return (
     <div className="BottomBar">
       <div className="BottomBarButtons">
@@ -30,7 +52,13 @@ function BottomBar({ onNavigateBack }) {
           <button className="BottombarButton" onClick={pasteAndGo}>
             <div className="BottomBackgroundImage"></div>
             <div className="ButtonText">Paste and Go</div>
-            Paste and Go
+          </button>
+        </div>
+        <div className='BottombarButton'>
+          <input type="file" id="fileInput" style={{ display: 'none' }} onChange={handleFileUpload} />
+          <button className="BottombarButton" onClick={handleButtonClick}>
+            <div className="BottomBackgroundImage"></div>
+            <div className="ButtonText">File Upload</div>
           </button>
         </div>
       </div>
