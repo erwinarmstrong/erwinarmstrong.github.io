@@ -9,25 +9,39 @@ import './App.css'
 
 function App() {
   const [showNomad, setShowNomad] = useState(false);
+  const [showNineLine, setShowNineLine] = useState(false);
 
-  const handleNavigate = () => {
+  const handleShowNomad = () => {
     setShowNomad(true);
+    setShowNineLine(false); // Ensure NineLine is hidden
+  }
+
+  const handleShowNineLine = () => {
+    setShowNomad(false); // Ensure Nomad is hidden
+    setShowNineLine(true);
   }
 
   const handleNavigateBack = () => {
     setShowNomad(false);
+    setShowNineLine(false);
   }
-
 
   return (
     <div className="App">
-      <Topbar onNavigateBack={handleNavigateBack} /> {/* Updated */}
-      {!showNomad ? (
-        <LandingPage onNavigate={handleNavigate} />
-      ) : (
+      <Topbar onNavigateBack={handleNavigateBack} />
+      {!showNomad && !showNineLine && (
+        <LandingPage
+          onNavigateNomad={handleShowNomad} // Pass the functions to LandingPage
+          onNavigateNineLine={handleShowNineLine}
+        />
+      )}
+      {showNomad && (
         <NOMAD />
       )}
-      <BottomBar onNavigateBack={handleNavigateBack} /> {/* Updated */}
+      {showNineLine && (
+        <NineLine />
+      )}
+      <BottomBar onNavigateBack={handleNavigateBack} />
     </div>
   );
 }
