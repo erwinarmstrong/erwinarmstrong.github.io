@@ -3,6 +3,8 @@ import Topbar from './components/Topbar';
 import BottomBar from './components/Bottombar';
 import LandingPage from './components/LandingPage';
 import NOMAD from './IRISComponents/NOMAD/NOMAD';
+import NineLine from './IRISComponents/9Line/NineLine';
+
 import './App.css'
 
 function App() {

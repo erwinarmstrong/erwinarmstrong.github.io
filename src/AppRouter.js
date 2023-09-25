@@ -23,6 +23,7 @@ const AppRouter = () => {
           }
         />
         <Route path="/nomad" element={<NOMAD />} />
+        <Route path='/nineline' element={<NineLine />} />
       </Routes>
     </Router>
   );

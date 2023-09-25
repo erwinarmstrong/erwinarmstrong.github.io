@@ -20,11 +20,15 @@ function NOMAD() {
     const [activeStep, setActiveStep] = useState(0);
 
     const handleNext = () => {
-        setActiveStep((prevStep) => prevStep + 1);
+        if (activeStep < 3) { // Assuming you have 4 screens (0-based index)
+            setActiveStep(prevStep => prevStep + 1);
+        }
     };
 
     const handleBack = () => {
-        setActiveStep((prevStep) => prevStep - 1);
+        if (activeStep > 0) { // Assuming you start from the first screen
+            setActiveStep(prevStep => prevStep - 1);
+        }
     };
 
     const [returnedSelectedLocations, setReturnedSelectedLocations] = useState('')
