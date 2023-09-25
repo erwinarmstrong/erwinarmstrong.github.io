@@ -39,6 +39,8 @@ function Topbar({
 
     const downloadTopbarContent = () => {
         const content = [
+            'A',
+            'A',
             returnedSelectedLocations,
             returnedSelectedRWYInUse,
             returnedSelectedDistanceAvailable,
@@ -88,6 +90,8 @@ function Topbar({
     const copyToClipboard = () => {
         if (navigator.clipboard && navigator.clipboard.writeText) {
             const content = [
+                'A',
+                'A',
                 returnedSelectedLocations,
                 returnedSelectedRWYInUse,
                 returnedSelectedDistanceAvailable,

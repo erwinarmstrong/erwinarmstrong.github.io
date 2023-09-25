@@ -26,11 +26,14 @@ function BottomBar({ onNavigateBack }) {
   return (
     <div className="BottomBar">
       <div className="BottomBarButtons">
-        <button className="BottomBarButton" onClick={pasteAndGo}>
-          Paste and Go
-        </button>
+        <div className='BottombarButton'>
+          <button className="BottombarButton" onClick={pasteAndGo}>
+            <div className="BottomBackgroundImage"></div>
+            <div className="ButtonText">Paste and Go</div>
+            Paste and Go
+          </button>
+        </div>
       </div>
-
       {isModalOpen && (
         <div className="modal">
           <div className="modal-content">

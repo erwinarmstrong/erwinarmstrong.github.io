@@ -62,6 +62,12 @@ div {
   border: none;
 }
 
+.BottombarButton {
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+
 .BackgroundImage {
   position: absolute;
   top: 0;
@@ -69,6 +75,17 @@ div {
   width: 100%;
   height: 100%;
   background-image: url('../public/logo512.png');
+  background-size: cover;
+  animation: spinImage 300s linear infinite;
+}
+
+.BottomBackgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./Media/PasteIRISCode.png');
   background-size: cover;
   animation: spinImage 300s linear infinite;
 }
@@ -93,6 +110,8 @@ div {
 
 .TopBar {
   top: 0;
+  text-align: -webkit-center;
+
 }
 
 .BottomBar {
@@ -110,16 +129,16 @@ div {
   height: 10vmin;
 }
 
-.BottomarButtons,
+.BottomBarButtons,
 .TopbarButtons {
   width: 95%;
   height: 10vmin;
   color: #000;
   border: none;
-
+  text-align: -webkit-center;
 }
 
-.BottomBarButton,
+.BottombarButton,
 .TopbarButton {
   width: 10vmin;
   height: 10vmin;

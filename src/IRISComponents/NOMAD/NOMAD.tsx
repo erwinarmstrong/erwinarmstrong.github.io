@@ -96,7 +96,6 @@ function NOMAD() {
                 returnedSelectedFuelType={returnedSelectedFuelType}
                 returnedSelectedFuelQty={returnedSelectedFuelQty}
                 returnedSelectedSuitabilityCode={returnedSelectedSuitabilityCode}
-
             />
             <div className="swipe-container">
                 <SwipeableViews
