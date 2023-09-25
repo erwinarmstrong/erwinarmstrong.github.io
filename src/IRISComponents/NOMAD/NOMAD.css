@@ -1,6 +1,5 @@
 /* Common Styles */
 .App,
-.NOMADChoiceSelect,
 .NOMADTopbar,
 .NOMADBottomBar,
 .NOMADScreenTable,
@@ -24,7 +23,7 @@ body,
 
 /* Base Styles for App */
 .App {
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 /* Portrait and Landscape Styles */
@@ -34,12 +33,8 @@ body,
         font-size: 2.5vmax;
     }
 
-    .NOMADChoiceSelect {
-        font-size: 1.5vmax;
-    }
-
     label {
-        font-size: 1.5vmax;
+        font-size: 1.3vmax;
     }
 
     .NOMADTopbarButtons,
@@ -60,6 +55,7 @@ body,
     }
 }
 
+
 /* Landscape Styles */
 @media (orientation: landscape) {
     .App {
@@ -75,10 +71,6 @@ body,
 @media (orientation: landscape) and (max-width: 767px) {
     .App {
         font-size: 2vmin;
-    }
-
-    .NOMADChoiceSelect {
-        font-size: 1.5vmin;
     }
 
     label {
@@ -98,6 +90,7 @@ body,
         font-size: 1.2vmin;
     }
 }
+
 
 /* Common Styles for Headers and Top Bars */
 .App-header,
@@ -124,14 +117,6 @@ body,
     table-layout: fixed;
 }
 
-/* Styles for Choice Selects */
-.NOMADChoiceSelect {
-    width: 90%;
-    height: 3em;
-    text-align: center;
-    padding: 0.5em;
-    box-sizing: border-box;
-}
 
 /* Styles for Swipe Containers */
 .swipe-container {

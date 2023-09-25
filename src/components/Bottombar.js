@@ -39,7 +39,7 @@ function BottomBar({ onNavigateBack }) {
           <div className="modal-content">
             <span className="close" onClick={closeModal}>&times;</span>
             <ModalTable
-              sendToModal={sendToModal}
+              sendToModal={fileContent}
             />
           </div>
         </div>

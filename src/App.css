@@ -46,6 +46,11 @@ div {
   margin-top: 2em;
 }
 
+.EndScreenTable {
+  font-size: 2vmin;
+  justify-content: center;
+}
+
 .LandingPageButton {
   font-size: 5vw;
   margin: 1vw;
@@ -183,6 +188,10 @@ div {
   width: 80%;
 }
 
+.ModalTabel {
+  width: 100%;
+}
+
 .close {
   color: #aaaaaa;
   float: right;
@@ -206,10 +215,8 @@ div {
   width: 90%;
   height: 3em;
   text-align: center;
-  padding: 0.5em;
   box-sizing: border-box;
-  font-size: .6em;
-
+  font-size: .5em;
 }
 
 .GoBacktoHomeDiv {
