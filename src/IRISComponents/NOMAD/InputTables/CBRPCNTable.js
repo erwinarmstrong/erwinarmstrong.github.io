@@ -34,7 +34,7 @@ function CBRPCNTable({
                 <tbody>
                     <tr>
                         <td>
-                            <div className="NOMADButtons">
+                            <div className="NOMADTopbarButtons">
                                 <button
                                     className={`NOMADCBRPCNButton ${selectedCBRPCNOption === 'CBR' ? 'selected' : ''}`}
                                     onClick={() => handleCBRPCNOptionClick('CBR')}

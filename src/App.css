@@ -56,6 +56,12 @@ div {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+.TopbarButton {
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+
 .BackgroundImage {
   position: absolute;
   top: 0;
@@ -66,6 +72,7 @@ div {
   background-size: cover;
   animation: spinImage 300s linear infinite;
 }
+
 
 .ButtonText {
   position: relative;
@@ -105,7 +112,7 @@ div {
 
 .BottomarButtons,
 .TopbarButtons {
-  width: 100%;
+  width: 95%;
   height: 10vmin;
   color: #000;
   border: none;
@@ -169,10 +176,6 @@ div {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-}
-
-.NOMADScreenTable {
-  width: 100vw;
 }
 
 .InputTable {

@@ -146,7 +146,6 @@ function Topbar({
                 <tbody>
                     <tr>
                         <td colSpan='2'>
-                            <br />
                             <span>{returnedSelectedLocations}</span>
                             <span>{returnedSelectedRWYInUse}</span>
                             <span>{returnedSelectedDistanceAvailable}</span>

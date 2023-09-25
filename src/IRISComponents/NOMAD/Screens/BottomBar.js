@@ -178,18 +178,6 @@ function BottomBar({
         openModal();
     };
 
-    const pasteAndGo = () => {
-        navigator.clipboard.readText().then(text => {
-            // Set the content of the modal to the clipboard text
-            setFileContent(text);
-
-            // Open the modal
-            openModal(true);
-        }).catch(error => {
-            console.error('Error reading from clipboard:', error);
-        });
-    };
-
     return (
         <div className='NOMADBottomBar'>
             <div className="NOMADNavButtons">
@@ -198,14 +186,11 @@ function BottomBar({
                 </button>
                 <input type="file" id="fileInput" style={{ display: 'none' }} onChange={handleFileUpload} />
                 <button className="NOMADButton" onClick={handleButtonClick}>Import NOMAD Code</button>
-                <button className="NOMADButton" onClick={pasteAndGo}>Paste and Go</button>
                 <button className="NOMADButton" onClick={handleNext}>
                     Next
                 </button>
 
             </div>
-
-
             {isModalOpen && (
                 <div className="modal">
                     <div className="modal-content">

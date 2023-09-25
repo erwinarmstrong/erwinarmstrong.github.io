@@ -4,12 +4,12 @@ function Topbar({ onNavigateBack }) {
   return (
     <div className="Topbar">
       <div className="TopbarButtons" style={{ textAlign: 'end' }}>
-        <button
-          className="TopbarButton"
-          onClick={onNavigateBack}
-        >
-          Go Back to App
-        </button>
+        <div className="TopbarButtonDiv">
+          <button className="TopbarButton" onClick={onNavigateBack}>
+            <div className="BackgroundImage"></div>
+            <div className="ButtonText">IRIS</div>
+          </button>
+        </div>
       </div>
     </div>
   );

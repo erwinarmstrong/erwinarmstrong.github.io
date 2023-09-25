@@ -7,7 +7,6 @@ import Screen3 from './Screens/Screen3'
 import Screen4 from './Screens/Screen4'
 import React, { useState } from 'react'
 
-import ImportSummaryScreen from './Screens/ImportSummaryScreen'
 import BottomBar from './Screens/BottomBar'
 
 import '../../App.css';
@@ -27,8 +26,6 @@ function NOMAD() {
     const handleBack = () => {
         setActiveStep((prevStep) => prevStep - 1);
     };
-
-    const [returnedFileContent, setReturnedFileContent] = useState('')
 
     const [returnedSelectedLocations, setReturnedSelectedLocations] = useState('')
     const [returnedSelectedRWYInUse, setReturnedSelectedRWYInUse] = useState('')
