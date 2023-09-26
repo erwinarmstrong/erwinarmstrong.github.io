@@ -5,7 +5,6 @@ function LandingPage({
   onNavigateNomad, // Add onNavigateNomad prop
   onNavigateNineLine, // Add onNavigateNineLine prop
 }) {
-
   const handleButtonClick = (destination) => {
     console.log(`Button clicked: ${destination}`);
     if (destination === 'NOMAD') {
@@ -30,7 +29,6 @@ function LandingPage({
           <div className="BackgroundImage"></div>
           <div className="ButtonText">9-Line</div>
         </button>
-
       </div>
     </div >
   );

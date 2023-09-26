@@ -1,25 +1,36 @@
-import FrequencyTable from '../InputTables/Frequency';
-import LocationInputTable from '../InputTables/LocationInputTable'
-
+import PatientType from "../InputTables/PatientType";
+import Precedence from "../InputTables/Precedence";
+import SiteSecurity from "../InputTables/SiteSecurity";
+import SpecialEquipmentRequired from "../InputTables/SpecialEquipmentRequired";
 function Screen1({
-    setReturnedSelectedLocation,
-    setReturnedSelectedFrequency,
+    setReturnedSelectedPrecedence,
+    setReturnedSelectedSpecialEquipmentRequired,
+    setReturnedSelectedPatientType,
+    setReturnedSelectedSiteSecurity
 }) {
     return (
         <div className="NineLineAppDiv">
             <table className='NineLineScreenTable'>
                 <tbody>
                     <tr>
+                        <Precedence
+                            setReturnedSelectedPrecedence={setReturnedSelectedPrecedence}
+                        />
                         <td>
-                            <LocationInputTable
-                                setReturnedSelectedLocation={setReturnedSelectedLocation}
+                            <SpecialEquipmentRequired
+                                setReturnedSelectedSpecialEquipmentRequired={setReturnedSelectedSpecialEquipmentRequired}
                             />
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <FrequencyTable
-                                setReturnedSelectedFrequency={setReturnedSelectedFrequency}
+                            <PatientType
+                                setReturnedSelectedPatientType={setReturnedSelectedPatientType}
+                            />
+                        </td>
+                        <td>
+                            <SiteSecurity
+                                setReturnedSelectedSiteSecurity={setReturnedSelectedSiteSecurity}
                             />
                         </td>
                     </tr>

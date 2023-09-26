@@ -3,6 +3,10 @@ import React, { useState } from 'react';
 function Topbar({
     returnedSelectedLocations,
     returnedSelectedFrequency,
+    returnedSelectedPrecedence,
+    returnedSelectedSpecialEquipmentRequired,
+    returnedSelectedPatientType,
+    returnedSelectedSiteSecurity,
 
 }) {
 
@@ -14,6 +18,10 @@ function Topbar({
             'B',
             returnedSelectedLocations,
             returnedSelectedFrequency,
+            returnedSelectedPrecedence,
+            returnedSelectedSpecialEquipmentRequired,
+            returnedSelectedPatientType,
+            returnedSelectedSiteSecurity,
         ].flat().join('');
 
         const element = document.createElement('a');
@@ -32,6 +40,10 @@ function Topbar({
                 'B',
                 returnedSelectedLocations,
                 returnedSelectedFrequency,
+                returnedSelectedPrecedence,
+                returnedSelectedSpecialEquipmentRequired,
+                returnedSelectedPatientType,
+                returnedSelectedSiteSecurity,
             ].flat().join('');
 
             navigator.clipboard.writeText(content).then(() => {
@@ -57,6 +69,10 @@ function Topbar({
                         <td colSpan='2'>
                             <span>{returnedSelectedLocations}</span>
                             <span>{returnedSelectedFrequency}</span>
+                            <span>{returnedSelectedPrecedence}</span>
+                            <span>{returnedSelectedSpecialEquipmentRequired}</span>
+                            <span>{returnedSelectedPatientType}</span>
+                            <span>{returnedSelectedSiteSecurity}</span>
                         </td>
                     </tr>
                 </tbody>

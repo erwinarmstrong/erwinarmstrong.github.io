@@ -1,23 +1,23 @@
-//Template.js
+//SiteSecurity.js
 import React, { useState, useEffect } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import TemplateOptionMap from '../ChoiceOptions/NineLineSpecialEquipmentRequiredOptionMap'
+import SiteSecurityOptionMap from '../ChoiceOptions/NineLineSiteSecurityOptionMap'
 
 
-function Template({
-    setReturnedSelectedTemplate,
+function SiteSecurity({
+    setReturnedSelectedSiteSecurity,
 }) {
 
-    const [selectedTemplate, setSelectedTemplate] = useState(['*']);
+    const [selectedSiteSecurity, setSelectedSiteSecurity] = useState(['*']);
 
     const handleSelectChange = (index) => (value) => {
-        console.log(`Changing Template ${index} to ${value}`);
-        const updatedTemplate = [...selectedTemplate];
-        updatedTemplate[index] = value;
-        setSelectedTemplate(updatedTemplate);
+        console.log(`Changing SiteSecurity ${index} to ${value}`);
+        const updatedSiteSecurity = [...selectedSiteSecurity];
+        updatedSiteSecurity[index] = value;
+        setSelectedSiteSecurity(updatedSiteSecurity);
     };
 
-    setReturnedSelectedTemplate(selectedTemplate)
+    setReturnedSelectedSiteSecurity(selectedSiteSecurity)
 
     return (
         <div className="InputDIV">
@@ -27,16 +27,16 @@ function Template({
                         <td>
                             <label
                                 className="NineLineLable">
-                                Template
+                                SiteSecurity
                             </label>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <ChoiceSelect
-                                value={selectedTemplate}
+                                value={selectedSiteSecurity}
                                 onChange={handleSelectChange(0)} // Pass the index directly
-                                options={TemplateOptionMap}
+                                options={SiteSecurityOptionMap}
                             />
                         </td>
                     </tr>
@@ -46,4 +46,4 @@ function Template({
     );
 }
 
-export default Template;
+export default SiteSecurity;

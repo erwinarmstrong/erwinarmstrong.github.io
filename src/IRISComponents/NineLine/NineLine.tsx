@@ -7,6 +7,9 @@ import Screen1 from './Screens/Screen1'
 import Screen2 from './Screens/ScreenTemplate'
 import Screen3 from './Screens/ScreenTemplate'
 import Screen4 from './Screens/ScreenTemplate'
+import LocationInputTable from './InputTables/LocationInputTable'
+import FrequencyTable from './InputTables/Frequency'
+
 
 import '../../App.css';
 import './NineLine.css'
@@ -31,15 +34,41 @@ function NineLine() {
     };
 
     const [returnedSelectedLocation, setReturnedSelectedLocation] = useState('');
-    const [returnedSelectedFrequency, setReturnedSelectedFrequency] = useState('')
+    const [returnedSelectedFrequency, setReturnedSelectedFrequency] = useState('');
+    const [returnedSelectedPrecedence, setReturnedSelectedPrecedence] = useState('');
+    const [returnedSelectedSpecialEquipmentRequired, setReturnedSelectedSpecialEquipmentRequired] = useState('');
+    const [returnedSelectedPatientType, setReturnedSelectedPatientType] = useState('');
+    const [returnedSelectedSiteSecurity, setReturnedSelectedSiteSecurity] = useState('')
 
     return (
         <div className="LandingPage">
             <Topbar
                 returnedSelectedLocations={returnedSelectedLocation}
                 returnedSelectedFrequency={returnedSelectedFrequency}
+                returnedSelectedPrecedence={returnedSelectedPrecedence}
+                returnedSelectedSpecialEquipmentRequired={returnedSelectedSpecialEquipmentRequired}
+                returnedSelectedPatientType={returnedSelectedPatientType}
+                returnedSelectedSiteSecurity={returnedSelectedSiteSecurity}
             />
-            <div className="swipe-container">
+            <table className='NineLineScreenTable'>
+                <tbody>
+                    <tr>
+                        <td>
+                            <LocationInputTable
+                                setReturnedSelectedLocation={setReturnedSelectedLocation}
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <FrequencyTable
+                                setReturnedSelectedFrequency={setReturnedSelectedFrequency}
+                            />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div className="swipe-container" style={{ border: 1 }}>
                 <SwipeableViews
                     index={activeStep}
                     onChangeIndex={handleNext} // This triggers when swiping right
@@ -50,8 +79,10 @@ function NineLine() {
                     enableMouseEvents
                 >
                     <Screen1
-                        setReturnedSelectedLocation={setReturnedSelectedLocation}
-                        setReturnedSelectedFrequency={setReturnedSelectedFrequency}
+                        setReturnedSelectedPrecedence={setReturnedSelectedPrecedence}
+                        setReturnedSelectedSpecialEquipmentRequired={setReturnedSelectedSpecialEquipmentRequired}
+                        setReturnedSelectedPatientType={setReturnedSelectedPatientType}
+                        setReturnedSelectedSiteSecurity={setReturnedSelectedSiteSecurity}
                     />
                     <Screen2
                     />

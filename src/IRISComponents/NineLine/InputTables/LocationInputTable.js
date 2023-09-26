@@ -1,7 +1,7 @@
 //Location.js
 import React, { useState, useEffect } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import LocationOptionMap from '../ChoiceOptions/NineLineDefaultOptionMap'
+import LocationOptionMap from '../ChoiceOptions/NineLineSpecialEquipmentRequiredOptionMap'
 import '../NineLine.css'
 
 function Location({
@@ -24,7 +24,7 @@ function Location({
             <table className="InputTable">
                 <tbody>
                     <tr>
-                        <td>
+                        <td colSpan={12}>
                             <label
                                 className="NineLineLable">
                                 Location
