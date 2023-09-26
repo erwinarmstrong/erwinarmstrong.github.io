@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import Topbar from './Screens/Topbar'
 import BottomBar from './Screens/BottomBar'
 import Screen1 from './Screens/Screen1'
-import Screen2 from './Screens/ScreenTemplate'
+import Screen2 from './Screens/Screen2'
 import Screen3 from './Screens/ScreenTemplate'
 import Screen4 from './Screens/ScreenTemplate'
 import LocationInputTable from './InputTables/LocationInputTable'
@@ -39,6 +39,7 @@ function NineLine() {
     const [returnedSelectedSpecialEquipmentRequired, setReturnedSelectedSpecialEquipmentRequired] = useState('');
     const [returnedSelectedPatientType, setReturnedSelectedPatientType] = useState('');
     const [returnedSelectedSiteSecurity, setReturnedSelectedSiteSecurity] = useState('')
+    const [returnedSelectedPickUpSiteMarking, setReturnedSelectedPickUpSiteMarking] = useState('')
 
     return (
         <div className="LandingPage">
@@ -49,6 +50,7 @@ function NineLine() {
                 returnedSelectedSpecialEquipmentRequired={returnedSelectedSpecialEquipmentRequired}
                 returnedSelectedPatientType={returnedSelectedPatientType}
                 returnedSelectedSiteSecurity={returnedSelectedSiteSecurity}
+                returnedSelectedPickUpSiteMarking={returnedSelectedPickUpSiteMarking}
             />
             <table className='NineLineScreenTable'>
                 <tbody>
@@ -85,6 +87,7 @@ function NineLine() {
                         setReturnedSelectedSiteSecurity={setReturnedSelectedSiteSecurity}
                     />
                     <Screen2
+                        setReturnedSelectedPickUpSiteMarking={setReturnedSelectedPickUpSiteMarking}
                     />
                     <Screen3
                     />

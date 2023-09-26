@@ -1,7 +1,8 @@
+import PickUpSiteMarking from "../InputTables/PickUpSiteMarking";
 
 
 function ScreenTemplate({
-
+    setReturnedSelectedPickUpSiteMarking,
 }) {
     return (
         <div className="NineLineAppDiv">
@@ -9,6 +10,9 @@ function ScreenTemplate({
                 <tbody>
                     <tr>
                         <td>
+                            <PickUpSiteMarking
+                                setReturnedSelectedPickUpSiteMarking={setReturnedSelectedPickUpSiteMarking}
+                            />
                         </td>
                     </tr>
                 </tbody>

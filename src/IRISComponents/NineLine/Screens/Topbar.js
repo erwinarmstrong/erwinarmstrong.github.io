@@ -7,6 +7,7 @@ function Topbar({
     returnedSelectedSpecialEquipmentRequired,
     returnedSelectedPatientType,
     returnedSelectedSiteSecurity,
+    returnedSelectedPickUpSiteMarking,
 
 }) {
 
@@ -22,6 +23,7 @@ function Topbar({
             returnedSelectedSpecialEquipmentRequired,
             returnedSelectedPatientType,
             returnedSelectedSiteSecurity,
+            returnedSelectedPickUpSiteMarking,
         ].flat().join('');
 
         const element = document.createElement('a');
@@ -44,6 +46,7 @@ function Topbar({
                 returnedSelectedSpecialEquipmentRequired,
                 returnedSelectedPatientType,
                 returnedSelectedSiteSecurity,
+                returnedSelectedPickUpSiteMarking,
             ].flat().join('');
 
             navigator.clipboard.writeText(content).then(() => {
@@ -73,6 +76,7 @@ function Topbar({
                             <span>{returnedSelectedSpecialEquipmentRequired}</span>
                             <span>{returnedSelectedPatientType}</span>
                             <span>{returnedSelectedSiteSecurity}</span>
+                            <span>{returnedSelectedPickUpSiteMarking}</span>
                         </td>
                     </tr>
                 </tbody>
