@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
 import PickUpSiteMarkingOptionMap from '../ChoiceOptions/NineLinePickUpSiteMarkingOptionMap';
-import ColorOptionMap from '../ChoiceOptions/NineLineColorOptionMap'
-import ShapeOptionMap from '../ChoiceOptions/NineLineShapeOptionMap'
+import ColorOptionMap from '../ChoiceOptions/NineLineColorOptionMap';
+import ShapeOptionMap from '../ChoiceOptions/NineLineShapeOptionMap';
+import FlareColorOptionMap from '../ChoiceOptions/NineLineFlareColorOptionMap'
 
 function PickUpSiteMarking({
     setReturnedSelectedPickUpSiteMarking,
@@ -20,19 +21,17 @@ function PickUpSiteMarking({
         setReturnedSelectedPickUpSiteMarking(selectedPickUpSiteMarking);
     }, [selectedPickUpSiteMarking, setReturnedSelectedPickUpSiteMarking]);
 
-    let furtherOptions = null; // Initialize furtherOptions as null
+    useEffect(() => {
+        // Reset the second and third elements whenever selectedPickUpSiteMarking[0] changes
+        setSelectedPickUpSiteMarking(prevState => [
+            prevState[0],  // Keep the first element unchanged
+            '*',  // Reset the second element to '*'
+            '*'   // Reset the third element to '*'
+        ]);
+    }, [selectedPickUpSiteMarking[0]]);
 
-    if (selectedPickUpSiteMarking[0] === 'S') {
-        furtherOptions = (
-            <td>
-                <ChoiceSelect
-                    value={selectedPickUpSiteMarking[1]}
-                    onChange={handleSelectChange(1)}
-                    options={ColorOptionMap}
-                />
-            </td>
-        );
-    }
+    let furtherOptions = null;
+
     if (selectedPickUpSiteMarking[0] === 'P') {
         furtherOptions = (
             <>
@@ -53,15 +52,43 @@ function PickUpSiteMarking({
             </>
         );
     }
-    if (selectedPickUpSiteMarking[0] === 'I') {
+    if (selectedPickUpSiteMarking[0] === 'S') {
         furtherOptions = (
-            <td>
-                <ChoiceSelect
-                    value={selectedPickUpSiteMarking[1]}
-                    onChange={handleSelectChange(1)}
-                    options={ColorOptionMap}
-                />
-            </td>
+            <>
+                <td>
+                    <ChoiceSelect
+                        value={selectedPickUpSiteMarking[1]}
+                        onChange={handleSelectChange(1)}
+                        options={ColorOptionMap}
+                    />
+                </td>
+            </>
+        );
+    }
+    if (selectedPickUpSiteMarking[0] === 'S') {
+        furtherOptions = (
+            <>
+                <td>
+                    <ChoiceSelect
+                        value={selectedPickUpSiteMarking[1]}
+                        onChange={handleSelectChange(1)}
+                        options={ColorOptionMap}
+                    />
+                </td>
+            </>
+        );
+    }
+    if (selectedPickUpSiteMarking[0] === 'X') {
+        furtherOptions = (
+            <>
+                <td>
+                    <ChoiceSelect
+                        value={selectedPickUpSiteMarking[1]}
+                        onChange={handleSelectChange(1)}
+                        options={FlareColorOptionMap}
+                    />
+                </td>
+            </>
         );
     }
 
