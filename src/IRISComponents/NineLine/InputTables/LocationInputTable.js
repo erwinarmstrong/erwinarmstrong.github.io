@@ -1,7 +1,7 @@
 //Location.js
 import React, { useState, useEffect } from 'react';
 import ChoiceSelect from '../../../Inputs/ChoiceSelect';
-import LocationOptionMap from '../ChoiceOptions/NineLineSpecialEquipmentRequiredOptionMap'
+import LocationOptionMap from '../ChoiceOptions/NineLineDefaultOptionMap'
 import '../NineLine.css'
 
 function Location({

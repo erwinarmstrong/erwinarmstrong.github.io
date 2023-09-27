@@ -225,6 +225,10 @@ div {
   width: 100%;
 }
 
+.InputDIV {
+  background-color: #171a23;
+}
+
 .close {
   color: #aaaaaa;
   float: right;

@@ -5,8 +5,6 @@ import Topbar from './Screens/Topbar'
 import BottomBar from './Screens/BottomBar'
 import Screen1 from './Screens/Screen1'
 import Screen2 from './Screens/Screen2'
-import Screen3 from './Screens/ScreenTemplate'
-import Screen4 from './Screens/ScreenTemplate'
 import LocationInputTable from './InputTables/LocationInputTable'
 import FrequencyTable from './InputTables/Frequency'
 

@@ -27,7 +27,7 @@ function NBCContamination({
                         <td>
                             <label
                                 className="NineLineLable">
-                                NBCContamination
+                                NBC Contamination
                             </label>
                         </td>
                     </tr>

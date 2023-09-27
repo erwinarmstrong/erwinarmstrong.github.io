@@ -27,37 +27,37 @@ function Nationality({
                         <td>
                             <label
                                 className="NineLineLable">
-                                US or coalition military
+                                US or Coalition Military
                             </label>
                         </td>
                         <td>
                             <label
                                 className="NineLineLable">
-                                US or coalition Civilian
+                                US or Coalition Civilian
                             </label>
                         </td>
                         <td>
                             <label
                                 className="NineLineLable">
-                                Non-coalition military
+                                Non-Coalition Military
                             </label>
                         </td>
                         <td>
                             <label
                                 className="NineLineLable">
-                                Non-coalition civilian
+                                Non-Coalition Civilian
                             </label>
                         </td>
                         <td>
                             <label
                                 className="NineLineLable">
-                                Enemy prisoner of war (EPW)
+                                Enemy Prisoner of War (EPW)
                             </label>
                         </td>
                         <td>
                             <label
                                 className="NineLineLable">
-                                High-value target (HVT)
+                                High-Value Target (HVT)
                             </label>
                         </td>
                     </tr>

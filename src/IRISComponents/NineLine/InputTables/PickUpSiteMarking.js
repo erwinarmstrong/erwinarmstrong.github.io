@@ -94,14 +94,15 @@ function PickUpSiteMarking({
 
     return (
         <div className="InputDIV">
-            PickUp Site Markings
+            <label className="NineLineLable">
+                PickUp Site Markings
+            </label>
             <table className="InputTable">
 
                 <tbody>
                     <tr>
                         <td>
-                            <label className="NineLineLable">
-                            </label>
+
                         </td>
                     </tr>
                     <tr>

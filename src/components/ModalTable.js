@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import NOMADModalTable from '../components/ModalTables/NOMADModalTable'
 import '../IRISComponents/NOMAD/NOMAD.css'
-
+import NineLineModalTable from '../components/ModalTables/NineLineModalTable'
 
 const ModalTable = ({ sendToModal }) => {
     const [outputTable, setOutputTable] = useState(null);
@@ -32,6 +32,10 @@ const ModalTable = ({ sendToModal }) => {
                         <tbody>
                             <tr>
                                 <td>9line Table</td>
+                            </tr>
+                            <tr>
+                                <NineLineModalTable
+                                    fileContent={sendToModal} />
                             </tr>
                         </tbody>
                     </table>

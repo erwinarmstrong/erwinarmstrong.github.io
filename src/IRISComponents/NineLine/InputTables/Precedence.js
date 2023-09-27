@@ -21,7 +21,7 @@ function Precedence({
 
     return (
         <div className="InputDIV">
-            <table className="InputTable" border={1}>
+            <table className="InputTable">
                 <tbody>
                     <tr>
                         <td>

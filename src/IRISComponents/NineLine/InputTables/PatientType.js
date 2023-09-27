@@ -21,13 +21,13 @@ function PatientType({
 
     return (
         <div className="InputDIV">
-            <table className="InputTable" border={1}>
+            <table className="InputTable">
                 <tbody>
                     <tr>
                         <td colSpan={2}>
                             <label
                                 className="NineLineLable">
-                                PatientType
+                                Patient Type
                             </label>
                         </td>
                     </tr>

@@ -27,7 +27,7 @@ function SiteSecurity({
                         <td>
                             <label
                                 className="NineLineLable">
-                                SiteSecurity
+                                Site Security
                             </label>
                         </td>
                     </tr>
