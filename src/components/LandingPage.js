@@ -22,11 +22,11 @@ function LandingPage({
       </div>
       <div className="LandingPageButtonDiv">
         <button className="LandingPageButton" onClick={() => handleButtonClick('NOMAD')}>
-          <div className="BackgroundImage"></div>
+          <div className="NOMADBackgroundImage"></div>
           <div className="ButtonText">NOMAD</div>
         </button>
         <button className="LandingPageButton" onClick={() => handleButtonClick('NineLine')}>
-          <div className="BackgroundImage"></div>
+          <div className="NineLineBackgroundImage"></div>
           <div className="ButtonText">9-Line</div>
         </button>
       </div>

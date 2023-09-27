@@ -44,6 +44,9 @@ div {
 
 .LandingPageButtonDiv {
   margin-top: 2em;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .EndScreenTable {
@@ -52,7 +55,7 @@ div {
 }
 
 .LandingPageButton {
-  font-size: 5vw;
+  font-size: 7vw;
   margin: 1vw;
   position: relative;
   background-color: transparent;
@@ -71,6 +74,31 @@ div {
   position: relative;
   background-color: transparent;
   border: none;
+}
+
+.NOMADBackgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../src/Media/NOMADIcon.png');
+  background-size: cover;
+  animation: spinImage 300s linear infinite;
+  /* Adjust the opacity value (0.5 for 50% transparent) */
+
+}
+
+
+.NineLineBackgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../src/Media/NineLineIcon.png');
+  background-size: cover;
+  animation: spinImage 300s linear infinite;
 }
 
 .BackgroundImage {
