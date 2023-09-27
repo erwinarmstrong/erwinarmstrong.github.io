@@ -52,7 +52,7 @@ function PickUpSiteMarking({
             </>
         );
     }
-    if (selectedPickUpSiteMarking[0] === 'S') {
+    if (selectedPickUpSiteMarking[0] === 'F') {
         furtherOptions = (
             <>
                 <td>
@@ -94,28 +94,27 @@ function PickUpSiteMarking({
 
     return (
         <div className="InputDIV">
+            PickUp Site Markings
             <table className="InputTable">
+
                 <tbody>
                     <tr>
                         <td>
                             <label className="NineLineLable">
-                                PickUpSiteMarking
                             </label>
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                            <ChoiceSelect
-                                value={selectedPickUpSiteMarking[0]}
-                                onChange={handleSelectChange(0)}
-                                options={PickUpSiteMarkingOptionMap}
-                            />
-                        </td>
+                        <ChoiceSelect
+                            value={selectedPickUpSiteMarking[0]}
+                            onChange={handleSelectChange(0)}
+                            options={PickUpSiteMarkingOptionMap}
+                        />
                         {furtherOptions}
                     </tr>
-                </tbody>
-            </table>
-        </div>
+                </tbody >
+            </table >
+        </div >
     );
 }
 

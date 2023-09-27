@@ -40,6 +40,7 @@ function NineLine() {
     const [returnedSelectedPatientType, setReturnedSelectedPatientType] = useState('');
     const [returnedSelectedSiteSecurity, setReturnedSelectedSiteSecurity] = useState('')
     const [returnedSelectedPickUpSiteMarking, setReturnedSelectedPickUpSiteMarking] = useState('')
+    const [returnedSelectedNationality, setReturnedSelectedNationality] = useState('')
 
     return (
         <div className="LandingPage">
@@ -51,6 +52,7 @@ function NineLine() {
                 returnedSelectedPatientType={returnedSelectedPatientType}
                 returnedSelectedSiteSecurity={returnedSelectedSiteSecurity}
                 returnedSelectedPickUpSiteMarking={returnedSelectedPickUpSiteMarking}
+                returnedSelectedNationality={returnedSelectedNationality}
             />
             <table className='NineLineScreenTable'>
                 <tbody>
@@ -88,6 +90,7 @@ function NineLine() {
                     />
                     <Screen2
                         setReturnedSelectedPickUpSiteMarking={setReturnedSelectedPickUpSiteMarking}
+                        setReturnedSelectedNationality={setReturnedSelectedNationality}
                     />
                     <Screen3
                     />

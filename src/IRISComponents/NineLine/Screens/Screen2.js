@@ -1,8 +1,10 @@
+import Nationality from "../InputTables/Nationality";
 import PickUpSiteMarking from "../InputTables/PickUpSiteMarking";
 
 
 function ScreenTemplate({
     setReturnedSelectedPickUpSiteMarking,
+    setReturnedSelectedNationality,
 }) {
     return (
         <div className="NineLineAppDiv">
@@ -14,6 +16,11 @@ function ScreenTemplate({
                                 setReturnedSelectedPickUpSiteMarking={setReturnedSelectedPickUpSiteMarking}
                             />
                         </td>
+                    </tr>
+                    <tr>
+                        <Nationality
+                            setReturnedSelectedNationality={setReturnedSelectedNationality}
+                        />
                     </tr>
                 </tbody>
             </table>
