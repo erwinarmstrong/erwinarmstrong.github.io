@@ -22,7 +22,7 @@ function NineLine() {
     const [activeStep, setActiveStep] = useState(0);
 
     const handleNext = () => {
-        if (activeStep < 3) { // Assuming you have 4 screens (0-based index)
+        if (activeStep < 1) { // Assuming you have 4 screens (0-based index)
             setActiveStep(prevStep => prevStep + 1);
         }
     };
@@ -41,6 +41,7 @@ function NineLine() {
     const [returnedSelectedSiteSecurity, setReturnedSelectedSiteSecurity] = useState('')
     const [returnedSelectedPickUpSiteMarking, setReturnedSelectedPickUpSiteMarking] = useState('')
     const [returnedSelectedNationality, setReturnedSelectedNationality] = useState('')
+    const [returnedSelectedNBCContamination, setReturnedSelectedNBCContamination] = useState('')
 
     return (
         <div className="LandingPage">
@@ -53,6 +54,7 @@ function NineLine() {
                 returnedSelectedSiteSecurity={returnedSelectedSiteSecurity}
                 returnedSelectedPickUpSiteMarking={returnedSelectedPickUpSiteMarking}
                 returnedSelectedNationality={returnedSelectedNationality}
+                returnedSelectedNBCContamination={returnedSelectedNBCContamination}
             />
             <table className='NineLineScreenTable'>
                 <tbody>
@@ -91,12 +93,8 @@ function NineLine() {
                     <Screen2
                         setReturnedSelectedPickUpSiteMarking={setReturnedSelectedPickUpSiteMarking}
                         setReturnedSelectedNationality={setReturnedSelectedNationality}
+                        setReturnedSelectedNBCContamination={setReturnedSelectedNBCContamination}
                     />
-                    <Screen3
-                    />
-                    <>
-                    </>
-
                 </SwipeableViews>
 
             </div>
