@@ -76,6 +76,8 @@ function Topbar({
                 <tbody>
                     <tr>
                         <td colSpan='2'>
+                            <span>A</span>
+                            <span>B</span>
                             <span>{returnedSelectedLocations}</span>
                             <span>{returnedSelectedFrequency}</span>
                             <span>{returnedSelectedPrecedence}</span>
