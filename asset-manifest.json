@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.b84a330b.css",
+    "main.css": "/static/css/main.01ba79a5.css",
     "main.js": "/static/js/main.9fd501a5.js",
     "static/js/787.4130d737.chunk.js": "/static/js/787.4130d737.chunk.js",
     "static/media/logo512.png": "/static/media/logo512.2ae174c44088794227f1.png",
@@ -8,12 +8,12 @@
     "static/media/NineLineIcon.png": "/static/media/NineLineIcon.f0ab305cefe37fa0c341.png",
     "service-worker.js": "/service-worker.js",
     "index.html": "/index.html",
-    "main.b84a330b.css.map": "/static/css/main.b84a330b.css.map",
+    "main.01ba79a5.css.map": "/static/css/main.01ba79a5.css.map",
     "main.9fd501a5.js.map": "/static/js/main.9fd501a5.js.map",
     "787.4130d737.chunk.js.map": "/static/js/787.4130d737.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b84a330b.css",
+    "static/css/main.01ba79a5.css",
     "static/js/main.9fd501a5.js"
   ]
 }
