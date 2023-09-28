@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.01ba79a5.css",
-    "main.js": "/static/js/main.76905959.js",
+    "main.js": "/static/js/main.26490461.js",
     "static/js/787.4130d737.chunk.js": "/static/js/787.4130d737.chunk.js",
     "static/media/logo512.png": "/static/media/logo512.2ae174c44088794227f1.png",
     "static/media/NOMADIcon.png": "/static/media/NOMADIcon.316a643f1e8da986040b.png",
@@ -9,11 +9,11 @@
     "service-worker.js": "/service-worker.js",
     "index.html": "/index.html",
     "main.01ba79a5.css.map": "/static/css/main.01ba79a5.css.map",
-    "main.76905959.js.map": "/static/js/main.76905959.js.map",
+    "main.26490461.js.map": "/static/js/main.26490461.js.map",
     "787.4130d737.chunk.js.map": "/static/js/787.4130d737.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.01ba79a5.css",
-    "static/js/main.76905959.js"
+    "static/js/main.26490461.js"
   ]
 }
