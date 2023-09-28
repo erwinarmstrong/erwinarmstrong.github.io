@@ -50,14 +50,12 @@ function BottomBar({ onNavigateBack }) {
       <div className="BottomBarButtons">
         <div className='BottombarButton'>
           <button className="BottombarButton" onClick={pasteAndGo}>
-            <div className="BottomBackgroundImage"></div>
             <div className="ButtonText">Paste and Go</div>
           </button>
         </div>
         <div className='BottombarButton'>
           <input type="file" id="fileInput" style={{ display: 'none' }} onChange={handleFileUpload} />
           <button className="BottombarButton" onClick={handleButtonClick}>
-            <div className="BottomBackgroundImage"></div>
             <div className="ButtonText">File Upload</div>
           </button>
         </div>

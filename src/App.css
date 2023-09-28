@@ -72,8 +72,7 @@ div {
 
 .BottombarButton {
   position: relative;
-  background-color: transparent;
-  border: none;
+
 }
 
 .NOMADBackgroundImage {
@@ -111,18 +110,6 @@ div {
   background-size: cover;
   animation: spinImage 300s linear infinite;
 }
-
-.BottomBackgroundImage {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('./Media/PasteIRISCode.png');
-  background-size: cover;
-  animation: spinImage 300s linear infinite;
-}
-
 
 .ButtonText {
   position: relative;
@@ -177,20 +164,26 @@ div {
 }
 
 
-.BottombarButton,
 .TopbarButton {
   width: 10vmin;
   height: 10vmin;
   justify-content: space-between;
 }
 
+.BottombarButton {
+    width: 30vmin;
+    height: 10vmin;
+    font-size: 3vmin;
+ }
+
+
 .swipe-container {
-  width: 100%;
-  height: 70vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .react-swipeable-view-container {
@@ -267,4 +260,24 @@ div {
   background-color: #fff;
   color: #000;
   border: none;
+}
+
+@media (orientation: landscape) and (max-width: 767px) {
+    .App {
+        font-size: 3.4vmin;
+    }
+
+    label {
+        font-size: 2vmin;
+    }
+
+    table {
+        border-spacing: 0;
+    }
+
+    .NOMADTopbarButtons,
+    .NineLineTopbarButtons,
+    .NOMADNavButtons {
+        font-size: 3.2vmin;
+    }
 }
